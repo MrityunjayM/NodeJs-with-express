@@ -8,7 +8,7 @@ const promotionRouter = require('./routes/promoRouter')
 const leaderRouter = require('./routes/leaderRouter')
 
 const hostName = 'localhost';
-const port = 3000;
+const PORT = process.env.PORT || 3000;
 
 const app = express();
 
@@ -34,6 +34,6 @@ app.use((req,res,next) => {
 // Create server........
 const server = http.createServer(app);
 
-server.listen(port,hostName, () => {
-    console.log(`Server is running at http://${hostName}:${port}/`);
+server.listen(PORT,hostName, () => {
+    console.log(`Server is running at http://${hostName}:${PORT}/`);
 });
