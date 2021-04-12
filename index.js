@@ -4,7 +4,7 @@ const morgan = require('morgan');
 const bodyParser = require('body-parser');
 
 const dishRouter = require('./routes/dishRouter')
-const promotionRouter = require('./routes/promoRouter')
+const promoRouter = require('./routes/promoRouter')
 const leaderRouter = require('./routes/leaderRouter')
 
 const hostName = 'localhost';
